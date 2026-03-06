@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resgrito de universidades sucrense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background-color: #142850;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c2ff;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #1e3c72;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            background-color: #2a5298;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1e3c72;
+        }
+
+        footer {
+            background-color: #142850;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Digitalización de la Información Universitaria</h1>
+    <p>Modernizando la gestión académica en universidades cercanas</p>
+</header>
+
+<nav>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#universidades">Universidades</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="proyecto">
+    <h2>📌 Sobre el Proyecto</h2>
+    <div class="card">
+        <p>
+            Este proyecto tiene como objetivo impulsar la digitalización de la información 
+            académica y administrativa en universidades cercanas, permitiendo una gestión 
+            más eficiente, segura y accesible para estudiantes, docentes y personal administrativo.
+        </p>
+        <p>
+            Se implementan sistemas de almacenamiento en la nube, plataformas académicas digitales,
+            automatización de procesos y protección avanzada de datos.
+        </p>
+    </div>
+</section>
+
+<section id="universidades">
+    <h2>🏫 Universidades Cercanas</h2>
+
+    <div class="card">
+        <h3>Universidad Local 1</h3>
+        <p>Implementación de expedientes académicos digitales y plataforma virtual.</p>
+    </div>
+
+    <div class="card">
+        <h3>Universidad Local 2</h3>
+        <p>Digitalización de biblioteca, inscripciones en línea y gestión administrativa.</p>
+    </div>
+
+    <div class="card">
+        <h3>Universidad Local 3</h3>
+        <p>Integración de sistema ERP universitario y almacenamiento seguro en la nube.</p>
+    </div>
+</section>
+
+<section id="beneficios">
+    <h2>🚀 Beneficios de la Digitalización</h2>
+
+    <div class="card">
+        <ul>
+            <li>Acceso rápido y remoto a información académica</li>
+            <li>Reducción del uso de papel</li>
+            <li>Mayor seguridad de datos</li>
+            <li>Automatización de procesos administrativos</li>
+            <li>Mejor comunicación institucional</li>
+        </ul>
+
+        <button class="btn" onclick="mostrarMensaje()">Más información</button>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>📩 Contacto</h2>
+
+    <div class="card">
+        <form onsubmit="enviarFormulario(event)">
+            <label>Nombre:</label><br><br>
+            <input type="text" required><br><br>
+
+            <label>Email:</label><br><br>
+            <input type="email" required><br><br>
+
+            <label>Mensaje:</label><br><br>
+            <textarea rows="4" required></textarea><br><br>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Proyecto de Digitalización Universitaria | Página Pública</p>
+</footer>
+
+<script>
+    function mostrarMensaje() {
+        alert("La digitalización mejora la eficiencia, seguridad y accesibilidad en las universidades.");
+    }
+
+    function enviarFormulario(event) {
+        event.preventDefault();
+        alert("Formulario enviado correctamente (simulación).");
+    }
+</script>
+
+</body>
+</html>
